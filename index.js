@@ -33,11 +33,6 @@ MongoClient.connect('mongodb://127.0.0.1:27017/' , (err, client) => { //Подк
 });
 
 
-app.use(function (req, res, next) {
-    res.header('Access-Control-Allow-Origin', '*');
-})
-
-
 
 let transporter = nodemailer.createTransport({ //Создание почтового бота
     service: 'gmail',
